@@ -101,6 +101,8 @@ GEM
     childprocess (4.1.0)
     concurrent-ruby (1.1.9)
     crass (1.0.6)
+    cssbundling-rails (0.2.7)
+      railties (>= 6.0.0)
     dotenv (2.7.6)
     dotenv-rails (2.7.6)
       dotenv (= 2.7.6)
@@ -280,11 +282,13 @@ PLATFORMS
   arm64-darwin-20
   arm64-darwin-21
   x86_64-darwin-20
+  x86_64-darwin-21
 
 DEPENDENCIES
   bootsnap (>= 1.9.3)
   byebug
   capybara (>= 3.26)
+  cssbundling-rails
   dotenv-rails (~> 2.7)
   foreman (~> 0.87.2)
   hotwire-livereload

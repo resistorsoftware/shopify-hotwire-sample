@@ -18,6 +18,7 @@ gem 'polaris_view_components', '~> 0.6.0'
 
 # frontend
 gem 'jsbundling-rails'
+gem 'cssbundling-rails'
 gem 'turbo-rails'
 gem 'stimulus-rails'
 gem 'hotwire-livereload'
