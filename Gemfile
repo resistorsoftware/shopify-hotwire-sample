@@ -11,6 +11,7 @@ gem 'puma', '~> 5.0'
 gem 'bootsnap', '>= 1.9.3', require: false
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'dotenv-rails', '~> 2.7'
+gem "sidekiq"
 
 # shopify
 gem 'shopify_app', github: 'kirillplatonov/shopify_app'
@@ -30,6 +31,7 @@ end
 group :development do
   gem 'web-console', '>= 4.1.0'
   gem 'foreman', '~> 0.87.2'
+  gem 'puma-ngrok-tunnel'
 end
 
 group :test do
