@@ -15,13 +15,19 @@ Rails.application.configure do
   # Show full error reports.
   config.consider_all_requests_local = true
 
+   # Whitelist ngrok connections to development enviroment.
+  config.hosts << /[a-z0-9]+\.ngrok\.io/
+  # Whitelist Puma-Dev hostname.
+  config.hosts << 'profiteer22.test'
+  config.hosts << /[a-z0-9]+\.profiteer22.test/
+
   # Enable/disable caching. By default caching is disabled.
   # Run rails dev:cache to toggle caching.
   if Rails.root.join('tmp', 'caching-dev.txt').exist?
     config.action_controller.perform_caching = true
     config.action_controller.enable_fragment_cache_logging = true
-
-    config.cache_store = :memory_store
+    config.cache_store = :redis_cache_store, { url: ENV.fetch('REDIS_URL') }
+    #config.cache_store = :memory_store
     config.public_file_server.headers = {
       'Cache-Control' => "public, max-age=#{2.days.to_i}"
     }

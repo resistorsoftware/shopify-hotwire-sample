@@ -1,4 +1,4 @@
-# Shopify Hotwire Sample
+# Profiteer based on Kirill's fork from Shopify App 
 
 The sample app includes:
 - JWT integration for [Hotwire Turbo](https://turbo.hotwired.dev/)
@@ -8,10 +8,6 @@ The sample app includes:
 - [Hotwire::Livereload](https://github.com/kirillplatonov/hotwire-livereload)
 
 Since the `shopify_app` gem is not fully compatible with App Bridge 2 this sample uses fork.
-
-![Shopify Hotwire Sample](.github/assets/preview.png)
-
-> The old App Bridge 1 sample can be found in `app-bridge-1` branch.
 
 ## Quick start
 

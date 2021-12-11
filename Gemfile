@@ -32,6 +32,7 @@ group :development do
   gem 'web-console', '>= 4.1.0'
   gem 'foreman', '~> 0.87.2'
   gem 'puma-ngrok-tunnel'
+  gem "standard"
 end
 
 group :test do
