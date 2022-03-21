@@ -22,8 +22,9 @@ Rails.application.configure do
   # Whitelist ngrok connections to development enviroment.
   config.hosts << /[a-z0-9]+\.ngrok\.io/
   # Whitelist Puma-Dev hostname.
-  config.hosts << "profiteer22.test"
-  config.hosts << /[a-z0-9]+\.profiteer22.test/
+  config.hosts << ENV.fetch("NGROK_HOST_HEADER")
+
+  #config.hosts << /[a-z0-9]+\.asubtleweb.test/
 
   # Enable/disable caching. By default caching is disabled.
   # Run rails dev:cache to toggle caching.
