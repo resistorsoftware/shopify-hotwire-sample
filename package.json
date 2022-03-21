@@ -1,15 +1,15 @@
 {
-  "name": "shopify-hotwire-sample",
+  "name": "a-sublte-web",
   "private": true,
   "scripts": {
-    "build": "esbuild app/javascript/*.* --bundle --outdir=app/assets/builds",
+    "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds",
     "build:css": "tailwindcss -i ./app/assets/stylesheets/application.tailwind.css -o ./app/assets/builds/application.css"
   },
   "dependencies": {
     "@hotwired/stimulus": "^3.0.1",
     "@hotwired/turbo-rails": "^7.0.1",
     "@rails/request.js": "^0.0.6",
-    "@shopify/app-bridge-utils": "^2.0.5",
+    "@shopify/app-bridge-utils": "^2.0.19",
     "autoprefixer": "^10.4.0",
     "dotenv": "^10.0.0",
     "esbuild": "^0.13.10",

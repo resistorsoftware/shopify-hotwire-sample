@@ -272,6 +272,13 @@ GEM
       connection_pool (>= 2.2.2)
       rack (~> 2.0)
       redis (>= 4.2.0)
+    sprockets (4.0.3)
+      concurrent-ruby (~> 1.0)
+      rack (> 1, < 3)
+    sprockets-rails (3.4.2)
+      actionpack (>= 5.2)
+      activesupport (>= 5.2)
+      sprockets (>= 3.0.0)
     standard (1.7.2)
       rubocop (= 1.25.1)
       rubocop-performance (= 1.13.2)
@@ -326,6 +333,7 @@ DEPENDENCIES
   selenium-webdriver
   shopify_app
   sidekiq
+  sprockets-rails
   standard
   stimulus-rails
   turbo-rails

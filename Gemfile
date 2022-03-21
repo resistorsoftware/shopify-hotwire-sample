@@ -22,7 +22,7 @@ gem "jsbundling-rails"
 gem "cssbundling-rails"
 gem "turbo-rails"
 gem "stimulus-rails"
-gem "hotwire-livereload"
+gem "sprockets-rails"
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
@@ -33,6 +33,7 @@ group :development do
   gem "foreman", "~> 0.87.2"
   gem "puma-ngrok-tunnel"
   gem "standard"
+  gem "hotwire-livereload"
 end
 
 group :test do
