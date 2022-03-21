@@ -8,9 +8,11 @@
 
     <title><%= content_for(:title) %></title>
 
-    <%= stylesheet_link_tag 'polaris_view_components', 'application' %>
+    <%= stylesheet_link_tag "application", 'polaris_view_components', "data-turbo-track": "reload"  %>
     <%= javascript_include_tag 'application' %>
-    <%= hotwire_livereload_tags %>
+    <% if Rails.env.development? %>
+      <%= javascript_include_tag 'hotwire-livereload', defer: true %>
+    <% end %>
   </head>
 
   <body style="<%= polaris_body_styles %>">
